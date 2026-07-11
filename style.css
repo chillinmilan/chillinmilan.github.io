@@ -12,7 +12,7 @@ body {
 .bg {
   position: fixed;
   inset: -40px;
-  background: url('P1040274.jpg') center center / cover no-repeat;
+  background: url('P1040274-straight.jpg') center center / cover no-repeat;
   z-index: 0;
   will-change: transform;
 }
