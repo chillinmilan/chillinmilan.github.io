@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Milan Gamble</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Geist:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Milan Gamble — product management leader at Qualtrics, previously MicroStrategy and the Peace Corps. Virginia Tech mathematician." />
+  <meta name="theme-color" content="#101b29" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%B5%3C/text%3E%3C/svg%3E" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Hanken+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,25 +16,31 @@
   <div class="bg" id="bg"></div>
   <div class="overlay"></div>
 
-  <div class="name-block">
-    <h1>Milan Gamble</h1>
-  </div>
+  <main>
+    <div class="name-block">
+      <h1>Milan Gamble</h1>
+    </div>
 
-  <div class="detail-block">
-    <div class="bio">
-      <p>Manager, Product Manager at <strong>Qualtrics</strong> (previously Clarabridge)</p>
-      <p>way back, <strong>MicroStrategy</strong> and the <strong>Peace Corps</strong></p>
-      <p>w/ a BS in Math from <strong>Virginia Tech</strong></p>
+    <div class="detail-block">
+      <div class="bio">
+        <p>Manager, Product Manager at <strong>Qualtrics</strong> (previously Clarabridge)</p>
+        <p>way back, <strong>MicroStrategy</strong> and the <strong>Peace Corps</strong></p>
+        <p>w/ a BS in Math from <strong>Virginia Tech</strong></p>
+      </div>
+      <div class="links">
+        <a class="icon-btn" href="https://linkedin.com/in/milangamble" target="_blank" rel="noopener" aria-label="Milan Gamble on LinkedIn (opens in a new tab)">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a class="icon-btn" href="mailto:hire@milangamble.com" aria-label="Email Milan Gamble">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
-    <div class="links">
-      <a class="linkedin-btn" href="https://linkedin.com/in/milangamble" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-  </div>
+  </main>
 
   <script>
     const bg = document.getElementById('bg');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let targetX = 0, targetY = 0;
     let curX = 0, curY = 0;
 
@@ -53,7 +62,9 @@
       requestAnimationFrame(animate);
     }
 
-    animate();
+    if (!reducedMotion.matches) {
+      animate();
+    }
   </script>
 
 </body>
