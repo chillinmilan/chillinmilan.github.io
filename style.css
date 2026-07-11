@@ -12,7 +12,7 @@ body {
 .bg {
   position: fixed;
   inset: -40px;
-  background: url('P1040274-straight.jpg') center center / cover no-repeat;
+  background: url('bg-wide.jpg') center center / cover no-repeat;
   z-index: 0;
   will-change: transform;
 }
@@ -153,7 +153,7 @@ h1 {
   }
 
   .bg {
-    background-position: center 25%;
+    background-image: url('bg-mobile.jpg');
   }
 
   .name-block {
@@ -202,7 +202,7 @@ h1 {
 
   .bg {
     position: fixed;
-    background-position: center 25%;
+    background-image: url('bg-mobile.jpg');
   }
 
   .name-block {
