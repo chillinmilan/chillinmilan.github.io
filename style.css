@@ -186,10 +186,10 @@ h1 {
     top: auto;
     left: auto;
     transform: none;
-    width: auto;
+    width: 100%;
     max-width: 100%;
     padding: 18vh 1.5rem 0;
-    text-align: left;
+    text-align: center;
     flex-shrink: 0;
   }
 
