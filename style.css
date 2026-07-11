@@ -106,6 +106,19 @@ h1 {
   color: #ffffff;
 }
 
+/* Photo copyright credit */
+.credit {
+  position: fixed;
+  z-index: 3;
+  bottom: 0.9rem;
+  left: 1.1rem;
+  font-family: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: rgba(235, 244, 250, 0.55);
+}
+
 /* Visible keyboard focus */
 .icon-btn:focus-visible {
   outline: 2px solid #ffffff;
