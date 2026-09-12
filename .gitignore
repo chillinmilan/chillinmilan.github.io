@@ -1,0 +1,11 @@
+# Private working notes — never publish to the public repo
+README.md
+
+# Leftover empty folder from an older backup attempt
+current/
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
